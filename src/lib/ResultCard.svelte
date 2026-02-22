@@ -9,16 +9,17 @@
   let icon = "";
 
   if (percentage === 100) {
-    message = "Perfect! Je bent een MS-expert.";
+    message = "Super! Je bent een echte MS-expert.";
     icon = "🏆";
   } else if (percentage >= 70) {
-    message = "Geweldig gedaan! Je hebt een goede basiskennis.";
+    message = "Hartstikke goed gedaan! Je weet al heel veel.";
     icon = "🌟";
   } else if (percentage >= 50) {
-    message = "Niet slecht! Je hebt de basis begrepen.";
+    message = "Goed geprobeerd! Je hebt al een boel geleerd.";
     icon = "👍";
   } else {
-    message = "Bedankt voor het meedoen! Je hebt nu vast meer geleerd over MS.";
+    message =
+      "Bedankt voor het meedoen! Je weet nu vast meer over MS dan eerst.";
     icon = "📚";
   }
 </script>

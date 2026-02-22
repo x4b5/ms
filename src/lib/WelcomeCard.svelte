@@ -6,15 +6,15 @@
   <div class="icon-container">
     <div class="brain-icon">🧠</div>
   </div>
-  <h1>MS Quiz</h1>
-  <p class="subtitle">Test je kennis over Multiple Sclerose</p>
+  <h1>De grote MS Quiz</h1>
+  <p class="subtitle">Wat weet jij over MS?</p>
 
   <div class="info-box">
     <p>
-      Ontdek belangrijke feiten over MS, de symptomen en hoe het mensen
-      beïnvloedt.
+      Ontdek handige feitjes over MS, hoe het werkt in je lichaam en hoe je het
+      herkent.
     </p>
-    <p class="stats">7 Vragen • ± 3 Minuten</p>
+    <p class="stats">7 Vragen • Super Snel</p>
   </div>
 
   <button on:click={onStart} class="start-button">
