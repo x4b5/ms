@@ -1,0 +1,132 @@
+<script>
+  export let score;
+  export let total;
+  export let onRestart;
+
+  const percentage = Math.round((score / total) * 100);
+
+  let message = "";
+  let icon = "";
+
+  if (percentage === 100) {
+    message = "Perfect! Je bent een MS-expert.";
+    icon = "🏆";
+  } else if (percentage >= 70) {
+    message = "Geweldig gedaan! Je hebt een goede basiskennis.";
+    icon = "🌟";
+  } else if (percentage >= 50) {
+    message = "Niet slecht! Je hebt de basis begrepen.";
+    icon = "👍";
+  } else {
+    message = "Bedankt voor het meedoen! Je hebt nu vast meer geleerd over MS.";
+    icon = "📚";
+  }
+</script>
+
+<div class="glass-card result-card animate-fade-in">
+  <div class="result-icon">{icon}</div>
+  <h1>Quiz Voltooid!</h1>
+
+  <div class="score-container">
+    <div class="score-circle">
+      <span class="score-val">{score}</span>
+      <span class="score-total">/ {total}</span>
+    </div>
+    <p class="percentage">{percentage}% Correct</p>
+  </div>
+
+  <p class="result-message">{message}</p>
+
+  <div class="actions">
+    <button on:click={onRestart} class="restart-button"> Speel Opnieuw </button>
+    <a
+      href="https://www.msvereniging.nl/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="link-button"
+    >
+      Bezoek MS Vereniging Nederland
+    </a>
+  </div>
+</div>
+
+<style>
+  .result-card {
+    text-align: center;
+  }
+
+  .result-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .score-container {
+    margin: 2rem 0;
+  }
+
+  .score-circle {
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid var(--primary);
+    padding: 20px;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 20px var(--primary-glow);
+  }
+
+  .score-val {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary);
+  }
+
+  .score-total {
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    margin-left: 4px;
+  }
+
+  .percentage {
+    font-weight: 600;
+    color: var(--accent);
+    font-size: 1.2rem;
+  }
+
+  .result-message {
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    color: var(--text-main);
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .restart-button {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .link-button {
+    display: block;
+    padding: 1rem;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s;
+    font-size: 0.9rem;
+  }
+
+  .link-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+</style>
