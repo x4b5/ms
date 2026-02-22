@@ -3,6 +3,7 @@
   export let questionNumber;
   export let totalQuestions;
   export let onAnswer;
+  export let onNext;
 
   let selectedOption = null;
   let showedFeedback = false;
@@ -63,9 +64,18 @@
   </div>
 
   {#if showedFeedback}
-    <div class="explanation-box animate-fade-in">
-      <p><strong>Wist je dat?</strong></p>
-      <p>{question.explanation}</p>
+    <div class="feedback-section animate-fade-in">
+      <div class="explanation-box">
+        <p><strong>Wist je dat?</strong></p>
+        <p>{question.explanation}</p>
+      </div>
+
+      <button class="next-button" on:click={onNext}>
+        {questionNumber === totalQuestions
+          ? "Bekijk Resultaten"
+          : "Volgende Vraag"}
+        <span class="arrow">→</span>
+      </button>
     </div>
   {/if}
 </div>
@@ -171,13 +181,35 @@
     font-size: 1.2rem;
   }
 
-  .explanation-box {
+  .feedback-section {
     margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .explanation-box {
     padding: 1.2rem;
     background: rgba(99, 102, 241, 0.1);
     border-left: 4px solid var(--secondary);
     border-radius: 8px;
     font-size: 0.95rem;
     color: #e2e8f0;
+  }
+
+  .next-button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    gap: 8px;
+    background: linear-gradient(135deg, var(--primary) 0%, #f16d26 100%);
+  }
+
+  .arrow {
+    transition: transform 0.2s;
+  }
+
+  .next-button:hover .arrow {
+    transform: translateX(4px);
   }
 </style>
