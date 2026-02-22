@@ -40,14 +40,6 @@
 
   <div class="actions">
     <button on:click={onRestart} class="restart-button"> Speel Opnieuw </button>
-    <a
-      href="https://www.msvereniging.nl/"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="link-button"
-    >
-      Bezoek MS Vereniging Nederland
-    </a>
   </div>
 </div>
 
@@ -112,22 +104,5 @@
   .restart-button {
     width: 100%;
     padding: 1rem;
-  }
-
-  .link-button {
-    display: block;
-    padding: 1rem;
-    border-radius: 12px;
-    background: rgba(255, 255, 255, 0.05);
-    color: var(--text-muted);
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.2s;
-    font-size: 0.9rem;
-  }
-
-  .link-button:hover {
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
   }
 </style>
