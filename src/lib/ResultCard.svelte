@@ -41,6 +41,10 @@
   <div class="actions">
     <button on:click={onRestart} class="restart-button"> Speel Opnieuw </button>
   </div>
+
+  <p class="credits">
+    Gemaakt door <strong>Raul</strong> en <strong>Xavier</strong>
+  </p>
 </div>
 
 <style>
@@ -104,5 +108,18 @@
   .restart-button {
     width: 100%;
     padding: 1rem;
+  }
+
+  .credits {
+    margin-top: 2.5rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    opacity: 0.8;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 1.5rem;
+  }
+
+  .credits strong {
+    color: var(--accent);
   }
 </style>
