@@ -14,19 +14,6 @@ export const questions = [
   },
   {
     id: 2,
-    question: "Wie kunnen MS krijgen?",
-    options: [
-      "Alleen kinderen",
-      "Vooral mannen",
-      "Vaker vrouwen dan mannen",
-      "Alleen heel oude opa's en oma's",
-    ],
-    correctAnswer: 2,
-    explanation:
-      "Iedereen kan het krijgen, maar we zien het 't meest bij mensen tussen de 20 en 40 jaar. Vrouwen krijgen het vaker dan mannen.",
-  },
-  {
-    id: 3,
     question: "Wat gebeurt er in je lichaam als je MS hebt?",
     options: [
       "De 'isolatie' om je zenuwen gaat kapot",
@@ -39,7 +26,7 @@ export const questions = [
       "Je zenuwen werken als elektriciteitskabels. Er zit een beschermlaagje omheen. Bij MS raakt dat laagje beschadigd, waardoor de signalen niet meer goed doorkomen.",
   },
   {
-    id: 4,
+    id: 3,
     question: "Welke klacht hoort NIET bij MS?",
     options: [
       "Heel erg moe zijn",
@@ -52,7 +39,7 @@ export const questions = [
       "Van MS vallen je haren niet uit. Maar je kunt wel heel moe worden, wazig zien of moeite hebben met opletten op school.",
   },
   {
-    id: 5,
+    id: 4,
     question: "Kun je MS van iemand anders krijgen?",
     options: [
       "Ja, als je iemand een hand geeft",
@@ -65,7 +52,7 @@ export const questions = [
       "MS is absoluut niet besmettelijk. Je kunt gewoon met iemand met MS spelen, knuffelen of samen gamen!",
   },
   {
-    id: 6,
+    id: 5,
     question: "Wat is een 'schub' (spreek uit als: sjoeb)?",
     options: [
       "Een nieuwe sport",
@@ -78,7 +65,7 @@ export const questions = [
       "Een schub is een periode waarin de MS even heel actief is. Iemand heeft dan opeens meer last van klachten, maar dat kan later ook weer minder worden.",
   },
   {
-    id: 7,
+    id: 6,
     question: "Kunnen dokters MS al helemaal beter maken?",
     options: [
       "Ja, met een kleine pleister",
