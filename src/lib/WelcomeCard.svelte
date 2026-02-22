@@ -14,7 +14,7 @@
       Ontdek handige feitjes over MS, hoe het werkt in je lichaam en hoe je het
       herkent.
     </p>
-    <p class="stats">7 Vragen • Super Snel</p>
+    <p class="stats">6 Vragen • Super Snel</p>
   </div>
 
   <button on:click={onStart} class="start-button">
